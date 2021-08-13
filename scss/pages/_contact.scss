@@ -1,0 +1,13 @@
+.contact {
+  h2 {
+    font-size: 3rem;
+  }
+}
+
+@include s-1000px {
+  .contact {
+    h2 {
+      font-size: 2rem;
+    }
+  }
+}

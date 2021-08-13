@@ -1,0 +1,32 @@
+.contact-list {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  grid-template-areas:
+    ". contact ."
+    "email phone address";
+  grid-row-gap: 3rem;
+  grid-column-gap: 5rem;
+  h2 {
+    grid-area: contact;
+  }
+  .email {
+    grid-area: email;
+  }
+  .phone {
+    grid-area: phone;
+  }
+  .address {
+    grid-area: address;
+  }
+}
+
+@include s-1500px {
+  .contact-list {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "contact"
+      "email"
+      "phone"
+      "address";
+  }
+}

@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../scss/layouts/about-layout.scss"
+    ],
+    "names": [],
+    "file": "about-layout.css"
+}

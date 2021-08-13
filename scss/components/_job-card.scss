@@ -1,0 +1,20 @@
+.jobs__job {
+  background-color: $background-color;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  border-bottom: 5px solid $secondary-color;
+  h2 {
+    color: $secondary-color;
+    margin-bottom: 0.4rem;
+  }
+  h3 {
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+  }
+  h6 {
+    margin-bottom: 0.4rem;
+  }
+  p {
+    line-height: 1.2rem;
+  }
+}

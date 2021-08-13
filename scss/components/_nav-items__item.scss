@@ -1,0 +1,33 @@
+.menu-nav__item {
+  a:hover {
+    color: $secondary-color;
+    @include transition-ease;
+  }
+  font-size: 1.5rem;
+  transform: translateX(100vw);
+  @include transition-ease();
+
+  @for $i from 1 through 4 {
+    &:nth-child(#{$i}) {
+      transition-delay: ($i * 0.1s)+0.05s;
+    }
+  }
+
+  &.open {
+    transform: translateX(0vw);
+  }
+}
+.menu-nav__item.active {
+  a {
+    color: $secondary-color;
+  }
+}
+
+@include min-1100px {
+  .menu-nav__item {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    transform: translateX(0vw);
+  }
+}

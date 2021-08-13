@@ -1,0 +1,21 @@
+.projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+  width: 70vw;
+  margin: 2rem auto;
+  justify-items: center;
+  padding-bottom: 2rem;
+}
+
+@include max-1200px {
+  .projects {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@include max-800px {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}

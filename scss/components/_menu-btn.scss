@@ -1,0 +1,31 @@
+.menu-btn {
+  position: fixed;
+  z-index: 2;
+  right: 0.5rem;
+  top: 1rem;
+  height: 20px;
+  width: 28px;
+  cursor: pointer;
+  @include transition-ease();
+
+  @include hamburger-open;
+  @include hamburger-closed;
+
+  &__burger {
+    .material-icons.open {
+      position: absolute;
+      animation-name: hamburger-open;
+      animation-duration: 0.3s;
+    }
+    .material-icons.closed {
+      animation-name: hamburger-closed;
+      animation-duration: 0.3s;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .menu-btn {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+.footer_horizontally {
+  position: fixed;
+  bottom: 0.4rem;
+  right: 1rem;
+  text-align: right;
+  padding: 1rem;
+  color: white;
+}
+
+.footer_vertically {
+  position: fixed;
+  right: -3rem;
+  bottom: 4rem;
+  transform: rotate(90deg);
+}
+
+@include s-700px {
+  .footer_horizontally {
+    right: 0;
+  }
+}

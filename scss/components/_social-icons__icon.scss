@@ -1,0 +1,26 @@
+.social-icons {
+  a {
+    padding: 0.4rem;
+    cursor: pointer;
+    &:hover {
+      color: $secondary-color;
+    }
+    @include transition-ease();
+  }
+}
+
+.social-icons__vertical {
+  a {
+    margin: 0.4rem;
+    &:hover {
+      color: $secondary-color;
+    }
+    @include transition-ease();
+  }
+}
+
+@include s-700px {
+  a {
+    font-size: smaller;
+  }
+}

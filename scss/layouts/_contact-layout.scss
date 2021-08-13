@@ -1,0 +1,14 @@
+.contact {
+  display: flex;
+  padding-top: 35vh;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  @include background-image-size();
+}
+
+@include max-800px {
+  .contact {
+    padding-top: 20vh;
+  }
+}

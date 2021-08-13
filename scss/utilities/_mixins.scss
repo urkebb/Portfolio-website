@@ -1,0 +1,108 @@
+//media mixin
+
+@mixin s-1500px {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+
+@mixin s-1000px {
+  @media (max-width: 1000px) {
+    @content;
+  }
+}
+
+@mixin s-700px {
+  @media (max-width: 700px) {
+    @content;
+  }
+}
+
+@mixin min-1100px {
+  @media (min-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin max-1100px {
+  @media (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin max-1416px {
+  @media (max-width: 1416px) {
+    @content;
+  }
+}
+@mixin tablet {
+  @media screen and(max-width:1500px) {
+    @include linear-bg(-20rem);
+  }
+}
+
+@mixin mobile {
+  @media screen and(max-width:800px) {
+    @include linear-bg(-24rem);
+  }
+}
+
+@mixin max-800px {
+  @media screen and(max-width:800px) {
+    @content;
+  }
+}
+
+@mixin max-1200px {
+  @media screen and(max-width:1200px) {
+    @content;
+  }
+}
+
+@mixin linear-bg($x) {
+  background: $linear-gradient, url(../img/uros.jpg) fixed center $x;
+}
+
+@mixin transition-ease() {
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin background-image-size() {
+  @include linear-bg(-25rem);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  @include max-1416px() {
+    @include linear-bg(-15rem);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  @include max-1100px() {
+    @include linear-bg(center);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+@mixin hamburger-open {
+  @keyframes hamburger-open {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(720deg);
+    }
+  }
+}
+
+@mixin hamburger-closed {
+  @keyframes hamburger-closed {
+    0% {
+      transform: rotate(720deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+}
