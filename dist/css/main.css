@@ -64,7 +64,9 @@ a {
 }
 
 @media screen and (max-width: 800px) {
-  padding-top: 20vh;
+  .home {
+    padding-top: 30vh;
+  }
 }
 
 .social-icons {

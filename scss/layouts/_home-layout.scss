@@ -11,5 +11,7 @@
 }
 
 @include max-800px {
-  padding-top: 20vh;
+  .home {
+    padding-top: 30vh;
+  }
 }
